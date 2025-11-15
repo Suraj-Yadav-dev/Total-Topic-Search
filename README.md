@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📘 TOTLE – Frontend Developer Intern (Round 1 Submission)
 This project is a **React-based Topic Search UI** created as part of the **TOTLE Frontend Developer Internship – Round 1 Coding Task**.
 
@@ -59,3 +60,7 @@ JavaScript
 CSS
 
 Lottie-react (for animation)
+=======
+# Total-Topic-Search
+it's assignment
+>>>>>>> 05f19f83703a6ba9b4499050332b00e83a847634
