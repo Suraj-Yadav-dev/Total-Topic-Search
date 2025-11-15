@@ -1,0 +1,7 @@
+export const topics = [
+  { id: 1, name: "Thermodynamics", category: "Physics" },
+  { id: 2, name: "Calculus", category: "Mathematics" },
+  { id: 3, name: "Organic Chemistry", category: "Chemistry" },
+  { id: 4, name: "Data Structures", category: "Computer Science" },
+  { id: 5, name: "Electromagnetism", category: "Physics" }
+];
