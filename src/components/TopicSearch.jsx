@@ -9,13 +9,13 @@ const TopicSearch = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [theme, setTheme] = useState("light");
 
-  // Load saved theme
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) setTheme(savedTheme);
   }, []);
 
-  // Apply theme to body
+
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
@@ -32,7 +32,7 @@ const TopicSearch = () => {
   return (
     <div className="topic-wrapper">
       
-      {/* LEFT CONTENT */}
+      
       <div className="topic-left">
         <button className="theme-toggle" onClick={toggleTheme}>
           {theme === "light" ? "🌙" : "☀️"}
@@ -44,7 +44,7 @@ const TopicSearch = () => {
           <input
             type="text"
             className="search-input"
-            placeholder="🔍 Search topics..."
+            placeholder=" Search topics..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -59,12 +59,12 @@ const TopicSearch = () => {
               </div>
             ))
           ) : (
-            <p className="no-results">⚠️ No topics found.</p>
+            <p className="no-results"> No topics found.</p>
           )}
         </div>
       </div>
 
-      {/* RIGHT SIDE — LOTTIE ANIMATION */}
+      
       <div className="topic-right">
       <Lottie animationData={animationData} className="lottie-animation" />
 
