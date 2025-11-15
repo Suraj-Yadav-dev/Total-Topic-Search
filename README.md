@@ -1,31 +1,39 @@
-<<<<<<< HEAD
 # 📘 TOTLE – Frontend Developer Intern (Round 1 Submission)
-This project is a **React-based Topic Search UI** created as part of the **TOTLE Frontend Developer Internship – Round 1 Coding Task**.
 
-The application allows users to browse topics, search them in real time, and includes a clean UI with Dark/Light mode and an animated Lottie illustration.
+This project is a **React-based Topic Search UI**, created as part of the **TOTLE Frontend Developer Internship – Round 1 Coding Task**.
+
+The application allows users to browse topics, search them in real-time, and enjoy a clean UI with Light/Dark mode and a Lottie animation.
 
 ---
 
 ## 🚀 Features
-### ✔ Real-time Topic Search  
-- Search filters topics as the user types  
-- Case-insensitive search  
-- Shows **"No topics found"** if no match
 
-### ✔ Beautiful UI  
-- Modern card layout  
-- Clean responsive design  
-- Right-side Lottie-based animation  
-- Smooth Dark/Light theme toggle  
+### ✔ Real-time Topic Search  
+- Instant filtering while typing  
+- Case-insensitive search  
+- Displays **"No topics found"** when no results match  
+
+### ✔ Modern & Responsive UI  
+- Card-based topic layout  
+- Smooth theme toggle (Light/Dark)  
+- Right-side Lottie animation for visual appeal  
+- Fully responsive design  
 
 ### ✔ Error Handling  
-- Handles empty input  
-- No crash on invalid search  
+- Gracefully handles empty or invalid inputs  
+- No crashes or UI breaks  
 
 ### ✔ In-Memory Data  
-Uses a simple local array for topics:
+The app uses a simple local array:  
+
 ```js
-[{ id: 1, name: "Thermodynamics", category: "Physics" }, ...]
+const topics = [
+  { id: 1, name: "Thermodynamics", category: "Physics" },
+  { id: 2, name: "Organic Chemistry", category: "Chemistry" },
+  { id: 3, name: "Algebra", category: "Mathematics" },
+  { id: 4, name: "Machine Learning", category: "Computer Science" },
+  { id: 5, name: "Microbiology", category: "Biology" }
+];
 
 totle-topic-search/
 │── public/
@@ -47,9 +55,12 @@ totle-topic-search/
 │── package.json
 │── README.md
 
+git clone https://github.com/Suraj-Yadav-dev/Total-Topic-Search.git
+cd Total-Topic-Search
+npm install
+npm run dev
 
-
-🛠️ Tech Stack
+Tech Stack
 
 React.js
 
@@ -59,8 +70,15 @@ JavaScript
 
 CSS
 
-Lottie-react (for animation)
-=======
-# Total-Topic-Search
-it's assignment
->>>>>>> 05f19f83703a6ba9b4499050332b00e83a847634
+Lottie-react
+
+Preview Link:
+https://drive.google.com/file/d/161qi-FAoFj7tiAEYGKgnB8BC9gj7MPPN/preview
+
+⬇ Direct Download:
+https://drive.google.com/uc?id=161qi-FAoFj7tiAEYGKgnB8BC9gj7MPPN&export=download
+
+Live Demo:
+👉 https://total-topic-search.vercel.app/
+Suraj Yadav
+Frontend Developer Intern Applicant – TOTLE
