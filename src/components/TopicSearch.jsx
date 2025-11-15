@@ -4,17 +4,14 @@ import "../styles/topicSearch.css";
 import animationData from "../assets/Live_chatbot.json";
 import Lottie from "lottie-react";
 
-
 const TopicSearch = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [theme, setTheme] = useState("light");
 
-  
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) setTheme(savedTheme);
   }, []);
-
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
@@ -31,8 +28,7 @@ const TopicSearch = () => {
 
   return (
     <div className="topic-wrapper">
-      
-      
+      {/* LEFT SECTION */}
       <div className="topic-left">
         <button className="theme-toggle" onClick={toggleTheme}>
           {theme === "light" ? "🌙" : "☀️"}
@@ -44,32 +40,30 @@ const TopicSearch = () => {
           <input
             type="text"
             className="search-input"
-            placeholder=" Search topics..."
+            placeholder="Search topics..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
 
         <div className="topic-grid">
-          {filteredTopics.length > 0 ? (
+          {filteredTopics.length === 0 && searchTerm.trim() !== "" ? (
+            <p className="no-results">No topics found.</p>
+          ) : (
             filteredTopics.map((topic) => (
               <div className="topic-card" key={topic.id}>
                 <h3 className="topic-name">{topic.name}</h3>
                 <p className="topic-category">{topic.category}</p>
               </div>
             ))
-          ) : (
-            <p className="no-results"> No topics found.</p>
           )}
         </div>
       </div>
 
-      
+      {/* RIGHT SECTION */}
       <div className="topic-right">
-      <Lottie animationData={animationData} className="lottie-animation" />
-
+        <Lottie animationData={animationData} className="lottie-animation" />
       </div>
-
     </div>
   );
 };
