@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { topics } from "../data/topic.js";
-import "../styles/TopicSearch.css";
+import "../styles/topicSearch.css";
 import animationData from "../assets/Live_chatbot.json";
 import Lottie from "lottie-react";
 
